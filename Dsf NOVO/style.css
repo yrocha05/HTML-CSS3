@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "bonita" ;
+    src: url(fontes/BRONSON-Black.ttf);
+}
+@font-face {
+    font-family: "idroid";
+    src: url(fontes/idroid.otf);
+}
+
+:root {
+--cor0: #0C81ED ;
+--cor1: #0C4FF7 ;
+--cor2: #000BE0 ;
+--cor3: #232ECA ;
+--font-padrao: arial,verdana,sans-serif;
+--font-robozin: "idroid";
+--font-bonita: "bonita";
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: beige;
+    font-family:var(--font-padrao);
+    
+    
+    }
+header{
+    background-image: linear-gradient(to bottom,#000BE0,#0C4FF7);
+    text-align: center;
+    color: white;
+    font-family: var(--font-bonita);
+    font-size: 80%;
+    width: auto;
+    padding: 20px;
+}
+header h1 {
+    padding-bottom: 10px;
+    padding-top: 10px;   
+}
+
+header p { padding-top: 10px;
+}
+nav{
+    background-color: #0C4FF7;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+nav a:hover{
+    background-color: #0C81ED;
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
+    max-width: 800px;
+    margin: auto;
+}
+
+main img{
+    display: block;
+    margin: auto;
+    max-width: 690px;
+    min-width: 280px;
+    
+    
+}
+
+main p{
+    text-indent: 15px;
+    line-height: 1.3em;
+}
+
+main h1 {
+    font-family: var(--font-robozin);
+    padding-bottom: 10px;
+    background-image: linear-gradient(to right,#0c80edcb,transparent);
+    padding-left: 10px ;
+    border-radius: 5px;
+}
+main h2{
+    font-family: var(--font-robozin);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-image: linear-gradient(to right,#0c80ed48,transparent);
+    padding-left: 10px ;
+    border-radius: 5px;
+}
+aside {
+    background-color: #0C81ED;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+
+aside ul {
+
+    padding-top: 15px;
+    list-style-position: inside;
+    columns: 2;
+    padding-bottom: 15px;
+    
+}
+footer{
+    background-color: #000BE0;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: var(--font-bonita); 
+    font-size: 0.7em; 
+    margin-top: 20px;
+    
+}
