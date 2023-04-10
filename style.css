@@ -74,10 +74,10 @@ main {
 main img{
     display: block;
     margin: auto;
-    max-width: 690px;
+    max-width: 620px;
     min-width: 280px;
-    
-    
+    width: 400px;
+        
 }
 
 main p{
