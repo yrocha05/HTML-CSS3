@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <!--
+        Anatomia para Tabelas grandes
+        Table
+            CAPTION - Legenda da Tabela
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+
+                TH- TITULO DA COLUNA - NÃO USAR PARA DADOS
+                TD- CONTEUDO DA TABELA 
+
+            SCOPE
+                ROW- CONTEUDO NA MESMA LINHA
+                COL - MESMA COLUNA
+
+
+                Efeito Zebrado, (2n) qnts linhas pular / Se usar (odd impar)
+                (even Par )
+
+                Position RELATIVE na table-
+                Position Sticky ,top -1px e o background 
+    -->
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        thead,tfoot{
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th{ 
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+        .num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 9px;
+            background-color: lightgray;
+            border-radius: 10px 10px 0px 0px;
+        }
+        tfoot > tr{
+            border-radius: 0px 0px 10px 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <CAPtion>População do Brasil
+
+        </CAPtion>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num"> 45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num"> 21 160 791</td>
+            </tr>
+            <tr>
+                <td> Rio de Janeiro</td>
+                <td class="num"> 17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>000000000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti? Dicta soluta, voluptatem commodi reprehenderit placeat ad voluptates ea! A, enim. Delectus quisquam laudantium facilis voluptatem dolore sint doloremque doloribus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo quae autem rerum? Vel, doloribus mollitia ipsam et, vitae nobis excepturi officiis fuga dolore vero inventore nihil ut, debitis facere!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequatur cum accusantium harum, deleniti omnis molestias libero commodi assumenda earum laudantium. Tenetur minima fuga ipsum debitis molestiae accusantium quia dolor.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate architecto quo, illo fuga distinctio sapiente sequi assumenda aperiam similique veniam, expedita itaque magnam magni quod accusamus, qui voluptatibus exercitationem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora vitae id error delectus, fugit labore molestiae impedit quis sequi, dolorum autem voluptates alias eaque nostrum? Esse veritatis perferendis cum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti? Dicta soluta, voluptatem commodi reprehenderit placeat ad voluptates ea! A, enim. Delectus quisquam laudantium facilis voluptatem dolore sint doloremque doloribus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo quae autem rerum? Vel, doloribus mollitia ipsam et, vitae nobis excepturi officiis fuga dolore vero inventore nihil ut, debitis facere!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequatur cum accusantium harum, deleniti omnis molestias libero commodi assumenda earum laudantium. Tenetur minima fuga ipsum debitis molestiae accusantium quia dolor.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate architecto quo, illo fuga distinctio sapiente sequi assumenda aperiam similique veniam, expedita itaque magnam magni quod accusamus, qui voluptatibus exercitationem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora vitae id error delectus, fugit labore molestiae impedit quis sequi, dolorum autem voluptates alias eaque nostrum? Esse veritatis perferendis cum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti? Dicta soluta, voluptatem commodi reprehenderit placeat ad voluptates ea! A, enim. Delectus quisquam laudantium facilis voluptatem dolore sint doloremque doloribus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo quae autem rerum? Vel, doloribus mollitia ipsam et, vitae nobis excepturi officiis fuga dolore vero inventore nihil ut, debitis facere!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequatur cum accusantium harum, deleniti omnis molestias libero commodi assumenda earum laudantium. Tenetur minima fuga ipsum debitis molestiae accusantium quia dolor.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate architecto quo, illo fuga distinctio sapiente sequi assumenda aperiam similique veniam, expedita itaque magnam magni quod accusamus, qui voluptatibus exercitationem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora vitae id error delectus, fugit labore molestiae impedit quis sequi, dolorum autem voluptates alias eaque nostrum? Esse veritatis perferendis cum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti? Dicta soluta, voluptatem commodi reprehenderit placeat ad voluptates ea! A, enim. Delectus quisquam laudantium facilis voluptatem dolore sint doloremque doloribus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo quae autem rerum? Vel, doloribus mollitia ipsam et, vitae nobis excepturi officiis fuga dolore vero inventore nihil ut, debitis facere!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequatur cum accusantium harum, deleniti omnis molestias libero commodi assumenda earum laudantium. Tenetur minima fuga ipsum debitis molestiae accusantium quia dolor.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate architecto quo, illo fuga distinctio sapiente sequi assumenda aperiam similique veniam, expedita itaque magnam magni quod accusamus, qui voluptatibus exercitationem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora vitae id error delectus, fugit labore molestiae impedit quis sequi, dolorum autem voluptates alias eaque nostrum? Esse veritatis perferendis cum.
+    </p>
+
+</body>
+</html>
