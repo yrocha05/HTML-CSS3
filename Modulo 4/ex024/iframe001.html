@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos Iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+    <!--
+        FRAME BORDER 0 - TIRA A BORDA   /   1 - COLOCA BORDA
+        ALGUNS NAVEGADORES NÃO ACEITAM O IFRAME, COLOCAR NO CONTEUDO O LINK DO IFRAME CASO SEJA
+        PADRÃO IFRAME 300X150px
+
+        CSS É SOBERANA!!!
+
+        SCROLLING = NO = SEM BARRA DE ROLAGEM
+                    YES = COM BARRA DE ROLAGEM
+                    AUTO = DEPENDE DO CONTEUDO
+    -->
+</head>
+<body>
+    <h1>Testando o uso de iframe</h1>
+    <p>ACESSANDO O SITE DO 
+        
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">
+        </iframe>
+        PARA APRENDER A PROGRAMAR</p>
+
+        <p>Site do <iframe src="https://www.google.com.br" frameborder="0"></iframe>Também é maneiro, mas n funciona no iframe</p>
+    
+</body>
+</html>

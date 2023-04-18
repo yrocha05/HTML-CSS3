@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 95vw;
+            border: 2px solid black;
+            height: 250px;
+        }
+
+    </style>
+
+    <!--
+        IMPORTANTE COLOCAR NAME NO IFRAME
+        SRCDOC - POSSIVEL COLOCAR HTML DENTRO
+        RECOMENDADO USAR UM HTML DE PADRÃO
+    -->
+</head>
+<body>
+    <h1>Faça sua escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ipsam voluptates mollitia numquam, minus doloremque temporibus voluptatibus exercitationem. Recusandae minus reiciendis fugiat expedita aliquid obcaecati velit molestiae. Nesciunt, illo suscipit.</p>
+
+    <ul>
+        <li><a href="paginas-extras/tabela006.html" target="frame">Primeira pag</a></li>
+        <li><a href="paginas-extras/tabela005.html" target="frame">Segunda pag</a></li>
+        
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quis quod qui similique delectus assumenda saepe provident expedita accusamus, non sequi sit doloremque suscipit commodi, ullam sapiente mollitia voluptatem repudiandae!</p>
+
+    <iframe src="" frameborder="1" name="frame" srcdoc="<h1> Escolha uma das opções Acima</h1>"" >
+        <p>Infelizmente seu navegador não é compativel!</p>
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sint dolores saepe? Laboriosam quaerat officia corrupti, fugiat, qui reprehenderit excepturi necessitatibus ipsa dicta harum laudantium quis iure sapiente. Quasi, illo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi natus nulla quibusdam error tempora tenetur labore laudantium blanditiis, doloribus illum amet sapiente libero itaque voluptas inventore optio minus, quos laboriosam!</p>
+    
+</body>
+</html>
