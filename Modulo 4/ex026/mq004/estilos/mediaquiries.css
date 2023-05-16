@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+/* TYPICAL DEVICE BREAKPOINT
+-----------------------------------------
+Small Devices: 600px max
+Mobile: 600px á 768px
+Tablet: 768 á 1024
+Laptop: 992px á 1200px
+High-res laptop or desktop: 1200px. */
+
+/* MOBILE FIRST JÁ FEITO, NÃO HA NECESSIDADE DE FAZER CONFIG MOBILE */
+
+@media print {
+    
+}
+
+@media screen and (min-width:768px ) and (max-width:1024px) {
+    
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    
+}
+
+@media screen and (min-width:1200px) {
+    
+}
