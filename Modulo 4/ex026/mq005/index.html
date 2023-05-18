@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de MQ</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1 </a></li>
                 <li><a href="#">Opção 2 </a></li>
@@ -25,8 +27,23 @@
             <h2>Testando MQ</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore asperiores dicta deserunt et adipisci maxime optio, labore consequuntur laborum enim quasi doloremque. Aut unde dolorem mollitia quas eos, repellat magnam?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus odit fuga accusantium nam iusto eligendi quo, commodi pariatur voluptates sequi iste vitae debitis modi deleniti inventore doloribus voluptatibus officiis veniam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore nesciunt soluta enim minima iure voluptas, iste aliquid ullam facilis quaerat perspiciatis nostrum itaque quasi quae fugit culpa. Qui, in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa accusamus vel molestias rerum repellat natus inventore, facilis ratione dolorem dolorum commodi sed quisquam doloribus voluptatibus et iure. Quo, necessitatibus possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sint voluptas delectus cumque ex repudiandae, dignissimos provident illo quos tempora unde impedit et nisi dolores aut in tempore architecto quo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat porro, vitae magni illum eius, odit harum eligendi assumenda est esse, aperiam enim. Sequi consectetur nemo quos, itaque enim inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas praesentium possimus autem cupiditate atque obcaecati necessitatibus explicabo optio distinctio sequi minima velit molestiae nihil, ut repellendus est architecto quaerat excepturi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quisquam voluptatibus odit mollitia suscipit vitae obcaecati sequi libero? Provident rerum repellendus ab ex repudiandae voluptatem ipsum consequuntur velit ipsa exercitationem!</p>
 
         </article>
     </main>
+
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+
+        }
+    </script>
 </body>
 </html>
